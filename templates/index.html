@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gradient Calculator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="social-buttons">
+        <a href="https://github.com/uditnarayanDas" target="_blank" title="GitHub">
+            <img src="static/logo/icons8-github-512.png" alt="GitHub" />
+        </a>
+        <a href="https://www.linkedin.com/in/uditnarayan-das-ba2a76244/" target="_blank" title="LinkedIn">
+            <img src="static/logo/linkedin-logo.png" alt="LinkedIn" />
+        </a>
+        <a href="https://discord.gg/semKtKA6Da" target="_blank" title="Discord">
+            <img src="static/logo/icons8-discord-512.png" alt="Discord" />
+        </a>
+    </div>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" id="display" readonly/>
+            <div class="buttons">
+                <button onclick="press('7')">7</button>
+                <button onclick="press('8')">8</button>
+                <button onclick="press('9')">9</button>
+                <button onclick="setOperator('/')">÷</button>
+                <button onclick="press('4')">4</button>
+                <button onclick="press('5')">5</button>
+                <button onclick="press('6')">6</button>
+                <button onclick="setOperator('*')">×</button>
+                <button onclick="press('1')">1</button>
+                <button onclick="press('2')">2</button>
+                <button onclick="press('3')">3</button>
+                <button onclick="setOperator('-')">−</button>
+                <button onclick="press('0')">0</button>
+                <button onclick="press('.')">.</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="setOperator('+')">+</button>
+                <button onclick="clearDisplay()" class="span-2">C</button>
+                <button onclick="toggleHistory()" class="span-2">History</button>
+            </div>
+        </div>
+        <div class="history" id="history-panel" style="display:none;">
+            <h2>History</h2>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
