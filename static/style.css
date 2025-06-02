@@ -34,9 +34,9 @@ body::before {
     width: 90%;
     padding: 12px;
     font-size: 2em;
-    background: #222;
+    background: #2d2b2b;
     color: #fff;
-    border: none;
+    border: 2px solid #7c7474; /* Changed border color to white */
     border-radius: 12px;
     margin-bottom: 24px;
     margin-left: auto;
@@ -125,6 +125,7 @@ body::before {
         gap: 24px;
         padding: 10px 0;
         width: 100vw;
+        cursor: pointer;
     .social-buttons a img {
         width: 28px;a img {
         height: 28px;
